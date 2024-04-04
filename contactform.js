@@ -4,10 +4,6 @@ var zf_FieldArray = ["Name_First", "Name_Last", "Email", "MultiLine"];
 var isSalesIQIntegrationEnabled = false;
 var salesIQFieldsArray = [];
 
-function redirect() {
-    window.location.href = "https://www.google.com"
-}
-
 document.getElementById("form").reset();
 document.getElementById("form").addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent the default form submission
@@ -16,7 +12,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
     let name = document.getElementById("name");
     let email = document.getElementById("email");
     let message = document.getElementById("message");
-    let str = "hi";
     
     if (name.value.length <= 2 || email.value.length <= 6 || message.value.length <= 2) {
         alert("All fields must be filled out");
@@ -25,7 +20,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
         alert("Please enter a valid email address");
         return false;
     }
-
     // Send the form data to the server using the Fetch API
     fetch('https://forms.zohopublic.in/fluxsparkapp/form/ContactUs/formperma/lMxP_th1JYWNcOJUlcrtttzQhG0FORCBF93abHPRtWI/htmlRecords/submit', {
         mode: 'no-cors',
