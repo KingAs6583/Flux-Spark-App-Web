@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /temp.html
+Disallow: /*.md$
+Disallow: /Products
+Sitemap: https://www.fluxsparkapp.com/sitemap.xml
+
